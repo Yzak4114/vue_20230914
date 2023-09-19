@@ -1,0 +1,179 @@
+
+        :root {
+            --JPblucolor01: #a2d7dd;
+            --JPblucolor02: #7DB9DE;
+            --JPblucolor03: #2EA9DF;
+            --JPblucolor04: #00A5BF;
+            --JPblucolor05: #48929B;
+            --JPblucolor06: #94a8b0;
+            --JPblucolor07: #044F67;
+            --JPblucolor08: #006C7F;
+            --JPblucolor09: #003171;
+            --JPblucolor10: #1B294B;
+            --JPredcolor01: #F58F84;
+            --JPredcolor02: #F08F90;
+            --JPredcolor03: #FCC9B9;
+            --JPredcolor04: #F47983;
+            --JPredcolor05: #D05A6E;
+            --JPredcolor06: #F7665A;
+            --JPredcolor07: #CF3A24;
+            --JPredcolor08: #913225;
+            --JPredcolor09: #7E2639;
+            --JPredcolor10: #542D24;
+            --JPyelcolor01: #EFEACC;
+            --JPyelcolor02: #E2BE9F;
+            --JPyelcolor03: #F3C13A;
+            --JPyelcolor04: #E08A1E;
+            --JPyelcolor05: #826B58;
+            --JPyelcolor06: #4C3D30;
+            --JPgrecolor01: #A5BA93;
+            --JPgrecolor02: #A5BA93;
+            --JPgrecolor03: #007B43;
+            --JPgrecolor04: #3D5D42;
+            --JPgrecolor05: #224634;
+            --JPgrecolor06: #203838;
+        }
+
+        body {
+            background-color: var(--JPblucolor02);
+            padding-top: 10px;
+        }
+
+        /* background-color : 背景顏色
+           padding-top : 上面間距 */
+        .wrapper {
+            margin: 0 auto;
+            width: 1024px;
+        }
+
+        /* margin : 外距,控制元素周圍的空間或距離*/
+
+        .wrapper img {
+            width: 100%;
+        }
+
+        .wrapper .logo{
+            width: 100%;
+            height: 180px;
+            background-color: var(--JPredcolor01);
+            background-image: url(../images/moon/fer-nando-45JXWRNoTqU-unsplash.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+        /* background-size : 背景圖片會被調整以填滿背景區域，同時保持其原始比例。它會自動縮放背景圖片，使其完全覆蓋背景區域，可能會裁切部分圖片或拉伸圖片以實現最佳覆蓋效果。 */
+        nav {
+            background-color: var(--JPblucolor08);
+            text-align: center;
+        }
+        /* nav 元素用於表示網頁的導航區域，通常包含網站的主要導航連結。 */
+        nav ul {
+            display: inline-block;
+        }
+        /* 內聯區塊元素結合了內聯元素和區塊元素的特點。內聯區塊元素在水平方向上佔據它們的內容寬度，同時保持區塊元素的特性，可以設置寬度、高度、內邊距和外邊距等屬性。 */
+
+        /* ul 元素則用於創建一個無序列表（unordered list），其中的項目由 li（list item）元素組成。*/
+        nav ul li {
+            float: left;
+            list-style-type: none;
+        }
+        /* list-style-type : 用於移除列表預設的項目符號或編號。 */
+        nav ul li a {
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: var(--JPbluecolor04);
+            margin-right: 2px;
+            color: var(--JPyelcolor02);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        /* padding : 用於設置元素的內邊距 */
+        nav ul li a:hover {
+            background-color: var(--JPblucolor02);
+            color: var(--JPredcolor09);
+        }
+
+        .friend_link nav {
+            background-color: var(--JPblucolor08);
+        }
+
+        .friend_link nav ul li {
+            float: left;
+            list-style-type: none;
+        }
+
+        .friend_link nav ul li a {
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: var(--JPblucolor08);
+            margin-right: 100px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .friend_link nav ul li a:hover {
+            background-color: var(--JPyelcolor01);
+            color: var(--JPgrecolor03);
+        }
+
+        .content_in {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: center;
+            background-color: var(--JPblucolor04);
+        }
+        .content_in h1{
+            color : var(--JPyelcolor02);
+            margin-bottom: 30px;
+        }
+        .content_in p{
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .content_in a{
+            display: block;
+            background-color: var(--JPyelcolor01);
+            width: 100px;
+            height: 30px;
+            /* margin : 0 auto;*/
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            color: var(--JPyelcolor06);
+            font-size: 18px;
+            font-weight: bolder;
+            line-height: 30px;
+        }
+
+        .content_in a:hover{
+            background-color: var(--JPyelcolor02);
+            color: var(--JPredcolor04);
+        }
+        /* 頁腳設定 */
+        .footer{
+            background-color: var(--JPblucolor10);
+            color: var(--JPblucolor01);
+            text-align: center;
+        }
+        .footer p{
+            font-size: 18px;
+            padding-top: 10px;
+            padding-bottom: 10px;   
+            margin-top: 10px;        
+        }
+        @media screen and (max-width :1024px){
+            .wrapper{
+                width : 90%;
+            }
+        }
+        /* 響應式*/
